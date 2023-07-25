@@ -1,34 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@1.25.4/dist/full.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+  
+  <title>Fruit Burst</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'color-primary': '#F85559',
           }
         }
-      </script>
-       <link href="https://cdn.jsdelivr.net/npm/daisyui@1.25.4/dist/full.css" rel="stylesheet" type="text/css" />
-       <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+      }
+    }
+  </script>
 
-      <style>
-        .font-lato{
-          font-family: 'Lato', sans-serif;
-        }
-      </style>
-    <title>Fruit Burst</title>
-    
 </head>
+
 <body class="font-lato">
-    <h1>This is me</h1>
+  <header class="container mx-auto rounded-full bg-ethan-400">
+
+    <div class="navbar my-12 px-10 py-9">
+      
+      <div class="navbar-start hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+              </ul>
+            
+      </div>
+      <div class="navbar-center">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+
+            <li><a>home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost normal-case text-xl"><img class="w-9 mr-4" src="/images/logo.png" alt="">
+          <span class="text-4xl font-bold ">
+            Fruit Burst
+          </span></a>
+      </div>
+      <div class="navbar-end hidden md:flex">
+        <div class=" flex rounded relative w-1/2">
+          <input type="text" placeholder="Search here" class="input border-none rounded-full input- w-full max-w-xs" >
+          
+          
+        </div>
+        <div class="absolute pr-3"><a href=""><img src="images/searchicon.png" alt=""></a></div>
+      </div>
+     
+    </div>
+  </header>
+
+  <main></main>
+  
+  <footer></footer>
+
 </body>
+
 </html>
