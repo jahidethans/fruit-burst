@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link href="https://cdn.jsdelivr.net/npm/daisyui@1.25.4/dist/full.css" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
       font-family: 'Lato', sans-serif;
     }
   </style>
-  
+
   <title>Fruit Burst</title>
   <script>
     tailwind.config = {
@@ -25,7 +25,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
-            
+
           }
         }
       }
@@ -39,35 +39,41 @@
     <nav class="container mx-auto rounded-full bg-primary">
 
       <div class="navbar sm:flex-row-reverse md:flex-row my-12 px-10 py-9">
-        
+
         <div class="navbar-start hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li><a class="text-lg font-normal"><span class="text-white">Home</span></a></li>
-              <li><a  class="text-lg font-normal"><span class="text-white">About Us</span></a></li>
-              <li><a class="text-lg font-normal"><span class="text-white">Shop</span></a></li>
-              <li><a class="text-lg font-normal"><span class="text-white">All Fruits</span></a></li>
-                </ul>
-              
+            <li><a class="text-lg font-normal"><span class="text-white">About Us</span></a></li>
+            <li><a class="text-lg font-normal"><span class="text-white">Shop</span></a></li>
+            <li><a class="text-lg font-normal"><span class="text-white">All Fruits</span></a></li>
+          </ul>
+
         </div>
         <div class="navbar-center flex flex-row-reverse md:flex-row">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </label>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-  
+
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
               <li><a>All Fruits</a></li>
-              <li><a> <div class="md:hidden">
-                <div class=" flex rounded relative w-40">
-                  <input type="text" placeholder="Search here" class="input border-none rounded-full input- w-full max-w-xs" >
-                  
-                  
-                </div>
-                <div class="absolute -mt-9 left-32"><a href=""><img src="images/searchicon.png" alt=""></a></div>
-              </div> </a></li>
+              <li><a>
+                  <div class="md:hidden">
+                    <div class=" flex rounded relative w-40">
+                      <input type="text" placeholder="Search here"
+                        class="input border-none rounded-full input- w-full max-w-xs">
+
+
+                    </div>
+                    <div class="absolute -mt-9 left-32"><a href=""><img src="images/searchicon.png" alt=""></a></div>
+                  </div>
+                </a></li>
             </ul>
           </div>
           <a class="btn btn-ghost normal-case text-xl"><img class="w-9 mr-4" src="/images/logo.png" alt="">
@@ -77,13 +83,13 @@
         </div>
         <div class="navbar-end hidden md:flex">
           <div class=" flex rounded relative w-1/2">
-            <input type="text" placeholder="Search here" class="input border-none rounded-full input- w-full max-w-xs" >
-            
-            
+            <input type="text" placeholder="Search here" class="input border-none rounded-full input- w-full max-w-xs">
+
+
           </div>
           <div class="absolute pr-3"><a href=""><img src="images/searchicon.png" alt=""></a></div>
         </div>
-       
+
       </div>
     </nav>
   </header>
@@ -92,91 +98,415 @@
     <!-- carousel section-->
     <section>
       <div class="carousel md:container sm:w-4/5 mx-auto relative">
-        
-          <div id="slide1" class="carousel-item relative w-full">
-            <img src="images/banner1.png" class="w-full " />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide4" class="btn btn-circle">❮</a> 
-              <a href="#slide2" class="btn btn-circle">❯</a>
-            </div>
-            <!-- text on carousol -->
-            <div class="container mx-auto absolute lg:top-16 md:top-16 top-6 text-center">
-              <h1 class="lg:text-7xl md:text-4xl text-white font-extrabold mt">Exotic tastes at your <br> doorstep</h1>
-              <p class="md:text-xl text-xs text-white font-medium mt-1 mb-5">We supply highly quality organic products</p>
-              <button class="btn btn-error bg-primary">Shop Now</button>
-            </div>
-          </div> 
-          <div id="slide2" class="carousel-item relative w-full">
-            <img src="images/banner2.png" class="w-full" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" class="btn btn-circle">❮</a> 
-              <a href="#slide3" class="btn btn-circle">❯</a>
-            </div>
-            <!-- text on carousol -->
-            <div class="container mx-auto absolute lg:top-16 md:top-16 top-6 text-center">
-              <h1 class="lg:text-7xl md:text-4xl text-white font-extrabold mt">Exotic tastes at your <br> doorstep</h1>
-              <p class="md:text-xl text-xs text-white font-medium mt-1 mb-5">We supply highly quality organic products</p>
-              <button class="btn btn-error bg-primary">Shop Now</button>
-            </div>
-          </div> 
-          <div id="slide3" class="carousel-item relative w-full">
-            <img src="images/banner3.png" class="w-full" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide2" class="btn btn-circle">❮</a> 
-              <a href="#slide4" class="btn btn-circle">❯</a>
-            </div>
-            <!-- text on carousol -->
-            <div class="container mx-auto absolute lg:top-16 md:top-16 top-6 text-center">
-              <h1 class="lg:text-7xl md:text-4xl text-white font-extrabold mt">Exotic tastes at your <br> doorstep</h1>
-              <p class="md:text-xl text-xs text-white font-medium mt-1 mb-5">We supply highly quality organic products</p>
-              <button class="btn btn-error bg-primary">Shop Now</button>
-            </div>
-          </div> 
-          <div id="slide4" class="carousel-item relative w-full">
-            <img src="images/banner4.png" class="w-full" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide3" class="btn btn-circle">❮</a> 
-              <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
-            <!-- text on carousol -->
-            <div class="container mx-auto absolute lg:top-16 md:top-16 top-6 text-center">
-              <h1 class="lg:text-7xl md:text-4xl text-white font-extrabold mt">Exotic tastes at your <br> doorstep</h1>
-              <p class="md:text-xl text-xs text-white font-medium mt-1 mb-5">We supply highly quality organic products</p>
-              <button class="btn btn-error bg-primary">Shop Now</button>
-            </div>
+
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="images/banner1.png" class="w-full " />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
-          
-          
-        </div>
-        
-        <!-- fruit section -->
-        <div class="lg:flex justify-center hidden gap-5 bg-white shadow-sm rounded-lg py-3 lg:w-1/2 md:w-2/3  mx-auto -mt-20 relative">
-          <div class="text-center cursor-pointer">
-            <img src="images/fruit1.png" alt="">
-            <p>Strawberry</p>
-          </div>
-          <div class="text-center cursor-pointer">
-            <img src="images/fruit2.png" alt="">
-            <p>Orange</p>
-          </div>
-          <div class="text-center cursor-pointer">
-            <img src="images/fruit3.png" alt="">
-            <p>Mango</p>
-          </div>
-          <div class="text-center cursor-pointer">
-            <img src="images/fruit4.png" alt="">
-            <p>Strawberry</p>
-          </div>
-          <div class="text-center cursor-pointer">
-            <img src="images/fruit5.png" alt="">
-            <p>Mango</p>
+          <!-- text on carousol -->
+          <div class="container mx-auto absolute md:top-16 top-6 text-center">
+            <h1 class="lg:text-7xl md:text-4xl text-white font-extrabold mt">Exotic tastes at your <br> doorstep</h1>
+            <p class="md:text-xl text-xs text-white font-medium mt-1 mb-5">We supply highly quality organic products</p>
+            <button class="btn btn-error bg-primary">Shop Now</button>
           </div>
         </div>
-      
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="images/banner2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+          <!-- text on carousol -->
+          <div class="container mx-auto absolute lg:top-16 md:top-16 top-6 text-center">
+            <h1 class="lg:text-7xl md:text-4xl text-white font-extrabold mt">Exotic tastes at your <br> doorstep</h1>
+            <p class="md:text-xl text-xs text-white font-medium mt-1 mb-5">We supply highly quality organic products</p>
+            <button class="btn btn-error bg-primary">Shop Now</button>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="images/banner3.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+          <!-- text on carousol -->
+          <div class="container mx-auto absolute lg:top-16 md:top-16 top-6 text-center">
+            <h1 class="lg:text-7xl md:text-4xl text-white font-extrabold mt">Exotic tastes at your <br> doorstep</h1>
+            <p class="md:text-xl text-xs text-white font-medium mt-1 mb-5">We supply highly quality organic products</p>
+            <button class="btn btn-error bg-primary">Shop Now</button>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="images/banner4.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+          <!-- text on carousol -->
+          <div class="container mx-auto absolute lg:top-16 md:top-16 top-6 text-center">
+            <h1 class="lg:text-7xl md:text-4xl text-white font-extrabold mt">Exotic tastes at your <br> doorstep</h1>
+            <p class="md:text-xl text-xs text-white font-medium mt-1 mb-5">We supply highly quality organic products</p>
+            <button class="btn btn-error bg-primary">Shop Now</button>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- fruit section -->
+      <div
+        class="lg:flex justify-center hidden gap-5 bg-white shadow-sm rounded-lg py-3 lg:w-1/2 md:w-2/3  mx-auto -mt-20 relative">
+        <div class="text-center cursor-pointer">
+          <img src="images/fruit1.png" alt="">
+          <p>Strawberry</p>
+        </div>
+        <div class="text-center cursor-pointer">
+          <img src="images/fruit2.png" alt="">
+          <p>Orange</p>
+        </div>
+        <div class="text-center cursor-pointer">
+          <img src="images/fruit3.png" alt="">
+          <p>Mango</p>
+        </div>
+        <div class="text-center cursor-pointer">
+          <img src="images/fruit4.png" alt="">
+          <p>Strawberry</p>
+        </div>
+        <div class="text-center cursor-pointer">
+          <img src="images/fruit5.png" alt="">
+          <p>Mango</p>
+        </div>
+      </div>
+
     </section>
-    <!--  -->
+    <!-- deal section -->
+    <section class="mt-20">
+      <div class="flex justify-between flex-col gap-8 items-center lg:flex-row container mx-auto mb-16">
+        <div class="text-center lg:text-left">
+          <h1 class="text-5xl font-extrabold mb-6">Deal of the day</h1>
+          <p class="text-s font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece
+            of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="grid grid-flow-col items-start gap-5 text-center auto-cols-max">
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:15;"></span>
+            </span>
+            days
+          </div>
+          <span class="text-5xl">:</span>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:10;"></span>
+            </span>
+            hours
+          </div>
+          <span class="text-5xl">:</span>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:24;"></span>
+            </span>
+            min
+          </div>
+          <span class="text-5xl">:</span>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:30;"></span>
+            </span>
+            sec
+          </div>
+        </div>
+      </div>
+
+      <!-- cards -->
+      <div class="lg:container lg:mx-auto lg:grid flex flex-col items-center gap-6  lg:grid-cols-4">
+
+        <!-- card 1 -->
+        <div class="card w-80 bg-base-100 border shadow-xl">
+          <figure class="px-28 pt-28">
+            <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title mb-3 px-8 pb-4 border-b-2">12.90$ - 18.85$</h2>
+            <p class="text-base font-normal pb-6">Apples</p>
+            <!-- rating -->
+            <div class="card-actions pb-6">
+              <div class="rating">
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" checked />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+              </div>
+            </div>
+            <!-- modal -->
+            <!-- modal id -->
+            <a href="#my_modal_1" class="color-primary text-lg font-bold">Details</a>
+            <!-- modal main -->
+            <div class="modal " id="my_modal_1">
+              <div class="modal-box flex flex-col items-center">
+                <figure class="px-10 pt-10">
+                  <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <h3 class="font-extrabold text-4xl">Apples</h3>
+                <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <!-- rating -->
+                <div class="card-actions pb-6">
+                  <div class="rating">
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" checked />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                  </div>
+                </div>
+                <div class="flex justify-center gap-6 items-center">
+                  <div class="modal-action">
+                    <a href="#" class="btn btn-outline color-primary">Close</a>
+                  </div>
+                  <div class="pt-6">
+                    <button class="btn btn-error bg-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card w-80 bg-base-100 border shadow-xl">
+          <figure class="px-28 pt-28">
+            <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title mb-3 px-8 pb-4 border-b-2">12.90$ - 18.85$</h2>
+            <p class="text-base font-normal pb-6">Orange</p>
+            <!-- rating -->
+            <div class="card-actions pb-6">
+              <div class="rating">
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" checked />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+              </div>
+            </div>
+            <!-- modal -->
+            <!-- modal id -->
+            <a href="#my_modal_2" class="color-primary text-lg font-bold">Details</a>
+            <!-- modal main -->
+            <div class="modal " id="my_modal_2">
+              <div class="modal-box flex flex-col items-center">
+                <figure class="px-10 pt-10">
+                  <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <h3 class="font-extrabold text-4xl">Orange</h3>
+                <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <!-- rating -->
+                <div class="card-actions pb-6">
+                  <div class="rating">
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" checked />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                  </div>
+                </div>
+                <div class="flex justify-center gap-6 items-center">
+                  <div class="modal-action">
+                    <a href="#" class="btn btn-outline color-primary">Close</a>
+                  </div>
+                  <div class="pt-6">
+                    <button class="btn btn-error bg-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card-3 -->
+        <div class="card w-80 bg-base-100 border shadow-xl">
+          <figure class="px-28 pt-28">
+            <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title mb-3 px-8 pb-4 border-b-2">12.90$ - 18.85$</h2>
+            <p class="text-base font-normal pb-6">Red Dragon</p>
+            <!-- rating -->
+            <div class="card-actions pb-6">
+              <div class="rating">
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" checked />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+              </div>
+            </div>
+            <!-- modal -->
+            <!-- modal id -->
+            <a href="#my_modal_3" class="color-primary text-lg font-bold">Details</a>
+            <!-- modal main -->
+            <div class="modal " id="my_modal_3">
+              <div class="modal-box flex flex-col items-center">
+                <figure class="px-10 pt-10">
+                  <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <h3 class="font-extrabold text-4xl">Red Dragon</h3>
+                <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <!-- rating -->
+                <div class="card-actions pb-6">
+                  <div class="rating">
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" checked />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                  </div>
+                </div>
+                <div class="flex justify-center gap-6 items-center">
+                  <div class="modal-action">
+                    <a href="#" class="btn btn-outline color-primary">Close</a>
+                  </div>
+                  <div class="pt-6">
+                    <button class="btn btn-error bg-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card-4 -->
+        <div class="card w-80 bg-base-100 border shadow-xl">
+          <figure class="px-28 pt-28">
+            <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title mb-3 px-8 pb-4 border-b-2">12.90$ - 18.85$</h2>
+            <p class="text-base font-normal pb-6">Banana</p>
+            <!-- rating -->
+            <div class="card-actions pb-6">
+              <div class="rating">
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" checked />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+              </div>
+            </div>
+            <!-- modal -->
+            <!-- modal id -->
+            <a href="#my_modal_4" class="color-primary text-lg font-bold">Details</a>
+            <!-- modal main -->
+            <div class="modal " id="my_modal_4">
+              <div class="modal-box flex flex-col items-center">
+                <figure class="px-28 pt-28">
+                  <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <h3 class="font-extrabold text-4xl">Banana</h3>
+                <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <!-- rating -->
+                <div class="card-actions pb-6">
+                  <div class="rating">
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" checked />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                  </div>
+                </div>
+                <div class="flex justify-center gap-6 items-center">
+                  <div class="modal-action">
+                    <a href="#" class="btn btn-outline color-primary">Close</a>
+                  </div>
+                  <div class="pt-6">
+                    <button class="btn btn-error bg-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 text-center mb-40">
+        <button class="btn btn-error font-extrabold px-8 py-5 bg-primary">Shop All</button>
+      </div>
+    </section>
+    <!-- Team section -->
+    <section class="lg:h-screen relative">
+      <div class="hero h-4/6 container rounded-md lg:mx-auto" style="background-image: url(images/banner5.png);">
+        <div class="bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md absolute top-20">
+            <h1 class="mb-5 text-5xl font-extrabold">Meet the team section</h1>
+            <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            
+          </div>
+        </div>
+        <!-- teams cards -->
+        <div class="flex lg:flex-row flex-col lg:gap-32 lg:mt-40c mt-64">
+          <!-- card 1 -->
+          <div class="card w-52">
+            <figure class="px-10 pt-10">
+              <img src="images/member1.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-white">Awlad Hossain</h2>
+              <p class="text-white">Fruits Expert</p>
+              <div class="flex gap-2 mt-3">
+                <a href=""><img src="images/facebook 1.png" alt=""></a>
+                <a href=""><img src="images/twitter (1) 1.png" alt=""></a>
+                <a href=""><img src="images/linkedin 1.png" alt=""></a></div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card w-52">
+            <figure class="px-10 pt-10">
+              <img src="images/member2.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-white">Safia Chowdhury</h2>
+              <p class="text-white">Fruits Expert</p>
+              <div class="flex gap-2 mt-3">
+                <a href=""><img src="images/facebook 1.png" alt=""></a>
+                <a href=""><img src="images/twitter (1) 1.png" alt=""></a>
+                <a href=""><img src="images/linkedin 1.png" alt=""></a></div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card w-52 ">
+            <figure class="px-10 pt-10">
+              <img src="images/member3.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-white">Rokib Hossain</h2>
+              <p class="text-white">Fruits Expert</p>
+              <div class="flex gap-2 mt-3">
+                <a href=""><img src="images/facebook 1.png" alt=""></a>
+                <a href=""><img src="images/twitter (1) 1.png" alt=""></a>
+                <a href=""><img src="images/linkedin 1.png" alt=""></a></div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="card w-52 ">
+            <figure class="px-10 pt-10">
+              <img src="images/member4.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-white">Chaity</h2>
+              <p class="text-white">Fruits Expert</p>
+              <div class="flex gap-2 mt-3">
+                <a href=""><img src="images/facebook 1.png" alt=""></a>
+                <a href=""><img src="images/twitter (1) 1.png" alt=""></a>
+                <a href=""><img src="images/linkedin 1.png" alt=""></a></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
-  
+
   <footer></footer>
 
 </body>
